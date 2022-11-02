@@ -17,7 +17,7 @@ using namespace std;
 int main(int argc, char** argv) {
     load_dataset();
     vector<cv::Mat> Vec(81);
-    string path = "./images/sudoku0.png";
+    string path = "./Example_Images/sudoku0.png";
     cout << "\n" << "separating the unsolved sudoku grid into indivdual 81 grid images" << "\n";
     Vec = houghline(path);
     //cout << "\n" << "Vec size is " << Vec.size() << "\n";
