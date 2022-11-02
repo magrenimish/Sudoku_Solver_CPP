@@ -18,7 +18,6 @@ using namespace std;
 
 uint32_t distSQ(size_t i, cv::Mat flat, size_t j);
 uint8_t predict(size_t i, cv::Mat flat);
-bool FileExists(string Filepath);
 int * Prediction(vector<pair<bool, Mat>>& V);
 
 
