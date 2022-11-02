@@ -19,7 +19,12 @@ int main(int argc, char** argv) {
     load_dataset();
     
     vector<cv::Mat> Vec(81);
+    cv::Mat og_img;
     string path = "./Example_Images/sudoku0.png";
+    og_img = imread(path);
+    cout << "\n" << "original image is " << "\n";
+    imshow("Original Sudoku Image", og_img);
+    waitKey(200);
     cout << "\n" << "separating the unsolved sudoku grid into indivdual 81 grid images" << "\n";
     Vec = houghline(path);
     
