@@ -25,29 +25,19 @@ uint8_t predict(size_t i, cv::Mat flat) {
     return max_element(F, F + 10) - F;
 }
 
-bool FileExists(string Filepath)
-{
-    struct stat buffer;
-    return (stat(Filepath.c_str(), &buffer) == 0);
-}
-
 
 int * Prediction(vector<pair<bool, Mat>>& V) {
-    //cout << "\n" << "V size is " << V.size() << "\n";
     static int pred[81];
     bool r;
     Mat r1;
 
     for (int a2 = 0; a2 < 3; a2++) {
-        //cout << "\n" << "loop number " << a2 << "\n";
         for (int a1 = 0; a1 < 81; a1++) {
             r = V[a1].first;
-            //cout << "\n" << "value of r is " << r << "\n";
             r1 = V[a1].second;
             
             if (a2 == 1 && (pred[a1] == 2 || pred[a1] == 3 || pred[a1] == 4 || pred[a1] == 5 || pred[a1] == 9)) continue;
             if (a2 == 2 && (pred[a1] == 2 || pred[a1] == 3 || pred[a1] == 4 || pred[a1] == 5 || pred[a1] == 8 || pred[a1] == 9 || pred[a1] == 6)) continue;
-            //string path = "./hough_images/" + std::to_string(a1 + 1) + ".jpg";
             if (r == 1) {
                 cv::Mat img = r1;
                 cv::Mat padded;
