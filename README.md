@@ -4,7 +4,7 @@ Canny Edge detection and Hough Transform was used to detect the grid and divide 
 For each sub-image, the kNN algorithm with the MNIST dataset and k=3 is used for digit recognition</br></br>
 
 Currently the code displays the original unsolved sudoku image and the array of the solved sudoku as follows:</br>
-<img align="center" src="https://github.com/magrenimish/Sudoku_Solver_CPP/blob/main/Example_Images/sudoku0.png" alt="nimish magre"  /></a></br></br>
+<img align="center" src="https://github.com/magrenimish/Sudoku_Solver_CPP/blob/main/Example_Images/sudoku0.png" alt="nimish magre"  /></a>
 <img align="center" src="https://github.com/magrenimish/Sudoku_Solver_CPP/blob/main/Example_Images/Sudoku0_solved.png" alt="nimish magre"  /></a></br>
 I am continuing work on accepting the unsolved sudoku image directly from the webcam</br>
 and displaying the solved sudoku by displaying the relevant digits on the original image.</br>
